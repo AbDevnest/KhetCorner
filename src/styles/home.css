@@ -481,6 +481,15 @@
   color: #2e7d32;
 }
 
+.show {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.hide {
+  opacity: 0;
+  transition: 0.3s;
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 

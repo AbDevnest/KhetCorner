@@ -341,10 +341,10 @@ function Home() {
             </div>
 
             {/* Content */}
-            <div className="timeline-content">
-              <h3>{yearData[currentIndex].title}</h3>
-              <p>{yearData[currentIndex].description}</p>
-            </div>
+<div className={`timeline-content ${contentVisible ? "show" : "hide"}`}>
+  <h3>{yearData[currentIndex].title}</h3>
+  <p>{yearData[currentIndex].description}</p>
+</div>
           </div>
 
           {/* Logos Row (unchanged) */}
