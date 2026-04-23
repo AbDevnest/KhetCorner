@@ -14,7 +14,7 @@ import g6 from "../assets/images/gallery6.jpg";
 
 import "../styles/gallery.css";
 
-function Gallery () {
+function Gallery() {
   const [active, setActive] = useState("All");
 
   const data = [
@@ -35,57 +35,56 @@ function Gallery () {
         <Header />
 
         <Hero title="Our Gallery" subtitle="Gallery" bgImage={heroImg} />
- <section className="gallary-sec-two">
-      <div className="container">
-
-        {/* TITLE */}
-        <div className="row">
-          <div className="col-lg-6 col-12">
-            <div className="sec-4-txt-1 ps-3">
-              <h2>Our <b>Gallery</b></h2>
-              <p className="text-secondary">
-                We specialise in intelligent & effective Search and believes in the power of partnerships.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* FILTER */}
-        <div className="cd-inner">
-          <ul className="cd-ul">
-            {["All","Farm","Organic","Fruits"].map((cat) => (
-              <li key={cat} className="cd-li">
-                <button
-                  className={active === cat ? "active" : ""}
-                  onClick={() => setActive(cat)}
-                >
-                  {cat}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* IMAGES */}
-        <div className="row mt-4">
-          {filtered.map((item, i) => (
-            <div className="col-sm-6 col-12 mb-4" key={i}>
-              <div className="cd-imag animate-slide">
-                <img src={item.img} alt="" />
-
-                <div className="black-line"></div>
-                <div className="black-overlay"></div>
-                <div className="overlay-box box-left"></div>
-                <div className="overlay-box box-right"></div>
-
-                <div className="text-overlay">{item.text}</div>
+        <section className="gallary-sec-two">
+          <div className="container">
+            {/* TITLE */}
+            <div className="row">
+              <div className="col-lg-6 col-12">
+                <div className="sec-4-txt-1 ps-3">
+                  <h2>
+                    Our <b>Gallery</b>
+                  </h2>
+                  <p className="text-secondary">
+                    We specialise in intelligent & effective Search and believes
+                    in the power of partnerships.
+                  </p>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
 
-      </div>
-    </section>
+            <div className="cd-inner">
+              <ul className="cd-ul">
+                {["All", "Farm", "Organic", "Fruits"].map((cat) => (
+                  <li key={cat} className="cd-li">
+                    <button
+                      className={active === cat ? "active" : ""}
+                      onClick={() => setActive(cat)}
+                    >
+                      {cat}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="row mt-4">
+              {filtered.map((item, i) => (
+                <div className="col-sm-6 col-12 mb-4" key={i}>
+                  <div className="cd-imag animate-slide">
+                    <img src={item.img} alt="" />
+
+                    <div className="black-line"></div>
+                    <div className="black-overlay"></div>
+                    <div className="overlay-box box-left"></div>
+                    <div className="overlay-box box-right"></div>
+
+                    <div className="text-overlay">{item.text}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         <ContactForm />
 
         <Footer />

@@ -14,17 +14,12 @@ function ComingSoon() {
     <>
       <Header />
 
-      <Hero
-        title="Coming Soon"
-        subtitle="Coming Soon"
-        bgImage={heroImg}
-      />
+      <Hero title="Coming Soon" subtitle="Coming Soon" bgImage={heroImg} />
 
       {/* SECTION */}
       <section className="coming-sec">
         <div className="container-fluid p-0">
           <div className="row g-0">
-
             {/* LEFT IMAGE */}
             <div className="col-lg-6 d-none d-lg-block">
               <div
@@ -36,7 +31,6 @@ function ComingSoon() {
             {/* RIGHT CONTENT */}
             <div className="col-lg-6 col-12">
               <div className="coming-content">
-
                 <div className="coming-box">
                   <img src={logo} alt="logo" className="coming-logo" />
 
@@ -52,14 +46,10 @@ function ComingSoon() {
                     className="coming-input"
                   />
 
-                  <button className="btn-main coming-btn">
-                    SUBSCRIBE
-                  </button>
+                  <button className="btn-main coming-btn">SUBSCRIBE</button>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </section>

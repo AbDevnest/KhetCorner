@@ -1,5 +1,3 @@
-/* ===== INNER HERO ===== */
-
 .inner-hero {
   height: 450px;
   background-size: cover;
@@ -9,21 +7,18 @@
   align-items: flex-end;
 }
 
-/* overlay */
 .inner-hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* content */
 .inner-hero-content {
   position: relative;
   color: #fff;
   padding-bottom: 40px;
 }
 
-/* title */
 .inner-hero-title {
   font-size: 48px;
   font-weight: 800;
@@ -31,7 +26,6 @@
   margin-bottom: 10px;
 }
 
-/* breadcrumb */
 .inner-hero-breadcrumb {
   display: flex;
   gap: 10px;
@@ -41,9 +35,8 @@
   font-size: 14px;
 }
 
-/* 🔥 GOLD LINKS */
 .inner-hero-link {
-  color: #EEC344;
+  color: #eec344;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -51,8 +44,6 @@
 .inner-hero-link:hover {
   color: #fff;
 }
-
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 992px) {
   .inner-hero {

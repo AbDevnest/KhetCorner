@@ -11,40 +11,40 @@ function ContactForm() {
 
   const [errors, setErrors] = useState({});
 
-const handleChange = (e) => {
-  const { name, value } = e.target;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  setFormData({
-    ...formData,
-    [name]: value
-  });
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
 
-  setErrors((prev) => {
-    let newErrors = { ...prev };
+    setErrors((prev) => {
+      let newErrors = { ...prev };
 
-    if (name === "name" && value.trim()) {
-      delete newErrors.name;
-    }
-
-    if (name === "email") {
-      if (/\S+@\S+\.\S+/.test(value)) {
-        delete newErrors.email;
+      if (name === "name" && value.trim()) {
+        delete newErrors.name;
       }
-    }
 
-    if (name === "phone") {
-      if (/^[0-9]{10}$/.test(value)) {
-        delete newErrors.phone;
+      if (name === "email") {
+        if (/\S+@\S+\.\S+/.test(value)) {
+          delete newErrors.email;
+        }
       }
-    }
 
-    if (name === "message" && value.trim()) {
-      delete newErrors.message;
-    }
+      if (name === "phone") {
+        if (/^[0-9]{10}$/.test(value)) {
+          delete newErrors.phone;
+        }
+      }
 
-    return newErrors;
-  });
-};
+      if (name === "message" && value.trim()) {
+        delete newErrors.message;
+      }
+
+      return newErrors;
+    });
+  };
 
   const validate = () => {
     let err = {};

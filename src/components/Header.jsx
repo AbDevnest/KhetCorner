@@ -47,12 +47,10 @@ function Header() {
         } py-3`}
       >
         <div className="container p-lg-0">
-          {/* Logo */}
           <Link className="navbar-brand" to="/">
             KhetCorner
           </Link>
 
-          {/* Toggle Button */}
           <button
             ref={toggleRef}
             className="navbar-toggler"
@@ -61,7 +59,6 @@ function Header() {
             <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"}`}></i>
           </button>
 
-          {/* Nav Links */}
           <div
             ref={menuRef}
             className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}

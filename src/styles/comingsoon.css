@@ -1,18 +1,14 @@
-/* SECTION */
 .coming-sec {
   padding: 3rem 0px;
-    background: #f0f6f5;
-
+  background: #f0f6f5;
 }
 
-/* LEFT IMAGE */
 .coming-img {
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-/* RIGHT SIDE */
 .coming-content {
   background: #f0f6f5;
   height: 100vh;
@@ -22,33 +18,28 @@
   padding: 2rem;
 }
 
-/* BOX */
 .coming-box {
   text-align: center;
   max-width: 420px;
   width: 100%;
 }
 
-/* LOGO */
 .coming-logo {
   width: 150px;
   margin-bottom: 20px;
 }
 
-/* TITLE */
 .coming-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-/* SUBTITLE */
 .coming-subtitle {
   color: #388281;
   font-size: 14px;
   margin: 10px 0 20px;
 }
 
-/* INPUT */
 .coming-input {
   width: 100%;
   padding: 12px 20px;
@@ -58,15 +49,10 @@
   margin-bottom: 15px;
 }
 
-/* BUTTON */
 .coming-btn {
   width: 100%;
   padding: 12px;
 }
-
-/* ========================= */
-/* 📱 RESPONSIVE */
-/* ========================= */
 
 @media (max-width: 991px) {
   .coming-content {

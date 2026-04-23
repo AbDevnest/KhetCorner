@@ -1,19 +1,17 @@
 .footer {
-      background: #ffffffe7;
+  background: #ffffffe7;
 
   color: #0a1313;
   padding: 60px 0 30px;
-   backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
-/* Logo */
 .footer-logo {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-/* Titles */
 .footer-title {
   font-size: 18px;
   font-weight: 600;
@@ -21,24 +19,19 @@
   position: relative;
 }
 
-
-/* Text */
 .footer-text {
   font-size: 14px;
-    color: #2b3535;
+  color: #2b3535;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
-/* Copy */
 .footer-copy {
   margin-top: 15px;
   font-size: 13px;
-      color: #2b3535;
-
+  color: #2b3535;
 }
 
-/* Newsletter */
 .newsletter {
   display: flex;
   margin-top: 10px;
@@ -66,7 +59,6 @@
   background: #81c784;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .footer {
     text-align: center;

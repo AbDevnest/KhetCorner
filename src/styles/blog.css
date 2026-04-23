@@ -5,7 +5,7 @@
 /* BLOG CARD */
 .blog-card {
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
@@ -26,12 +26,12 @@
 
 .blog-title {
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: 0.3s;
 }
 
 .blog-title:hover {
-  color: #EEC344;
+  color: #eec344;
   cursor: pointer;
 }
 
@@ -76,7 +76,7 @@
   content: "";
   width: 50px;
   height: 3px;
-  background: #EEC344;
+  background: #eec344;
   display: block;
   margin-top: 5px;
 }
@@ -100,7 +100,7 @@
 }
 
 .category-list a:hover {
-  color: #EEC344;
+  color: #eec344;
 }
 
 .category-list span {

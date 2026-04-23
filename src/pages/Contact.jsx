@@ -3,57 +3,53 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import { useState } from "react";
 import heroImg from "../assets/images/post-img.jpg";
-import "../styles/contact-main.css"
+import "../styles/contact-main.css";
 
-function Contact () {
-
-    const [formData, setFormData] = useState({
+function Contact() {
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
 
-  // HANDLE INPUT
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-const handleChange = (e) => {
-  const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
 
-  setFormData({
-    ...formData,
-    [name]: value
-  });
+    setErrors((prev) => {
+      let newErrors = { ...prev };
 
-  setErrors((prev) => {
-    let newErrors = { ...prev };
-
-    if (name === "name" && value.trim()) {
-      delete newErrors.name;
-    }
-
-    if (name === "email") {
-      if (/\S+@\S+\.\S+/.test(value)) {
-        delete newErrors.email;
+      if (name === "name" && value.trim()) {
+        delete newErrors.name;
       }
-    }
 
-    if (name === "phone") {
-      if (/^[0-9]{10}$/.test(value)) {
-        delete newErrors.phone;
+      if (name === "email") {
+        if (/\S+@\S+\.\S+/.test(value)) {
+          delete newErrors.email;
+        }
       }
-    }
 
-    if (name === "message" && value.trim()) {
-      delete newErrors.message;
-    }
+      if (name === "phone") {
+        if (/^[0-9]{10}$/.test(value)) {
+          delete newErrors.phone;
+        }
+      }
 
-    return newErrors;
-  });
-};
+      if (name === "message" && value.trim()) {
+        delete newErrors.message;
+      }
 
-  // VALIDATION
+      return newErrors;
+    });
+  };
+
   const validate = () => {
     let newErrors = {};
 
@@ -94,7 +90,7 @@ const handleChange = (e) => {
         name: "",
         email: "",
         phone: "",
-        message: ""
+        message: "",
       });
     }
   };
@@ -105,102 +101,103 @@ const handleChange = (e) => {
 
         <Hero title="Our Contact" subtitle="Contact" bgImage={heroImg} />
 
- <section className="contact-v2">
-        <div className="container">
+        <section className="contact-v2">
+          <div className="container">
+            <div className="row align-items-center">
+              {/* LEFT */}
+              <div className="col-lg-6 col-12">
+                <h2 className="contact-v2-title">
+                  Get In <span>Touch</span>
+                </h2>
 
-          <div className="row align-items-center">
+                <p className="contact-v2-desc">
+                  We’re here to help you grow better with our organic solutions.
+                </p>
 
-            {/* LEFT */}
-            <div className="col-lg-6 col-12">
-              <h2 className="contact-v2-title">
-                Get In <span>Touch</span>
-              </h2>
+                <div className="contact-v2-info">
+                  <div className="contact-v2-item">
+                    <i className="fas fa-phone"></i>
+                    <p>+91 98765 43210</p>
+                  </div>
 
-              <p className="contact-v2-desc">
-                We’re here to help you grow better with our organic solutions.
-              </p>
+                  <div className="contact-v2-item">
+                    <i className="fas fa-envelope"></i>
+                    <p>support@farmfresh.com</p>
+                  </div>
 
-              <div className="contact-v2-info">
-                <div className="contact-v2-item">
-                  <i className="fas fa-phone"></i>
-                  <p>+91 98765 43210</p>
-                </div>
-
-                <div className="contact-v2-item">
-                  <i className="fas fa-envelope"></i>
-                  <p>support@farmfresh.com</p>
-                </div>
-
-                <div className="contact-v2-item">
-                  <i className="fas fa-map-marker-alt"></i>
-                  <p>Jaipur, Rajasthan</p>
+                  <div className="contact-v2-item">
+                    <i className="fas fa-map-marker-alt"></i>
+                    <p>Jaipur, Rajasthan</p>
+                  </div>
                 </div>
               </div>
+
+              {/* RIGHT FORM */}
+              <div className="col-lg-6 col-12">
+                <form className="contact-v2-form" onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                  {errors.name && (
+                    <span className="form-error">{errors.name}</span>
+                  )}
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && (
+                    <span className="form-error">{errors.email}</span>
+                  )}
+
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                  {errors.phone && (
+                    <span className="form-error">{errors.phone}</span>
+                  )}
+
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                  {errors.message && (
+                    <span className="form-error">{errors.message}</span>
+                  )}
+
+                  <button type="submit" className="btn-main mt-2">
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-
-            {/* RIGHT FORM */}
-            <div className="col-lg-6 col-12">
-              <form className="contact-v2-form" onSubmit={handleSubmit}>
-
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-                {errors.name && <span className="form-error">{errors.name}</span>}
-
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-                {errors.email && <span className="form-error">{errors.email}</span>}
-
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-                {errors.phone && <span className="form-error">{errors.phone}</span>}
-
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                ></textarea>
-                {errors.message && <span className="form-error">{errors.message}</span>}
-
-                <button type="submit" className="btn-main mt-2">
-                  Send Message
-                </button>
-
-              </form>
-            </div>
-
           </div>
+        </section>
 
-        </div>
-      </section>
-
-      {/* ===== MAP ===== */}
-      <section className="contact-v2-map">
-        <iframe
-          src="https://maps.google.com/maps?q=Jaipur,Rajasthan&z=13&output=embed"
-          width="100%"
-          height="500"
-          style={{ border: 0 }}
-          loading="lazy"
-          title="map"
-        ></iframe>
-      </section>
+        <section className="contact-v2-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Jaipur,Rajasthan&z=13&output=embed"
+            width="100%"
+            height="500"
+            style={{ border: 0 }}
+            loading="lazy"
+            title="map"
+          ></iframe>
+        </section>
 
         <Footer />
       </div>

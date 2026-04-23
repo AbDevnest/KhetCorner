@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import errorBg from "../assets/images/404-bg.jpg";
-import "../styles/error.css"
+import "../styles/error.css";
 
 function Error() {
   return (

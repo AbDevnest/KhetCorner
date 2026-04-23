@@ -1,12 +1,9 @@
-/* ===== ABOUT SECTION 2 ===== */
-
 .about-sec-2 {
   padding: 80px 0;
 }
 
-/* TEXT */
 .about-sec-2-subtitle {
-  color: #46866C;
+  color: #46866c;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -24,19 +21,16 @@
   line-height: 28px;
 }
 
-/* BUTTON */
 .about-sec-2-btn {
   margin-top: 20px;
 }
 
-/* IMAGE */
 .about-sec-2-img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-/* FEATURES */
 .about-sec-2-features {
   margin-top: 60px;
   padding-top: 40px;
@@ -64,10 +58,9 @@
   margin: 0;
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 
 @media (max-width: 992px) {
-
   .about-sec-2-title {
     font-size: 26px;
   }
@@ -78,7 +71,6 @@
 }
 
 @media (max-width: 768px) {
-
   .about-sec-2 {
     padding: 50px 0;
   }
@@ -96,7 +88,6 @@
   padding: 60px 0;
 }
 
-/* heading */
 .team-heading h2 {
   font-size: 30px;
   font-weight: 600;
@@ -117,7 +108,6 @@
   display: none;
 }
 
-/* column spacing */
 .team-col {
   padding-right: 15px;
 }
@@ -127,7 +117,6 @@
   position: relative;
 }
 
-/* image */
 .team-figure {
   overflow: hidden;
   margin: 0;
@@ -142,7 +131,6 @@
   transform: scale(1.1);
 }
 
-/* icons (center fixed) */
 .team-icons {
   position: absolute;
   bottom: 110px;
@@ -153,7 +141,7 @@
 }
 
 .team-icons i {
-  background: #EEC344;
+  background: #eec344;
   padding: 10px;
   border-radius: 50%;
   font-size: 14px;
@@ -193,36 +181,32 @@
   .team-icons {
     bottom: 70px;
   }
-}.about-sec-4 {
+}
+.about-sec-4 {
   padding: 60px 0;
 }
 
-/* spacing */
 .about-sec-4-top {
   margin-bottom: 60px;
 }
 
-/* heading */
 .about-sec-title {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.3;
 }
 
-/* text */
 .abt-p-2 {
   font-size: 15px;
   line-height: 28px;
   margin: 15px 0;
 }
 
-/* signature */
 .about-sign {
   width: 160px;
   margin-top: 10px;
 }
 
-/* cards */
 .about-card figure {
   margin: 0;
   overflow: hidden;
@@ -242,13 +226,11 @@
   font-size: 20px;
 }
 
-/* partners section */
 .about-sec-4-bottom {
   border-top: 1px solid #ddd;
   padding-top: 40px;
 }
 
-/* logos */
 .client-logo {
   padding: 15px;
 }
@@ -263,7 +245,6 @@
   opacity: 1;
 }
 
-/* responsive */
 @media (max-width: 991px) {
   .about-sec-4 {
     padding: 40px 20px;

@@ -48,7 +48,7 @@
 .black-line {
   position: absolute;
   inset: 0;
-  border: 18px solid rgba(0,0,0,0.2);
+  border: 18px solid rgba(0, 0, 0, 0.2);
 }
 
 .black-overlay {
@@ -123,14 +123,14 @@
   }
 
   .cd-imag:hover .box-left {
-  left: 32%;
-  top: 43%;
-}
+    left: 32%;
+    top: 43%;
+  }
 
-.cd-imag:hover .box-right {
-  right: 32%;
-  bottom: 43%;
-}
+  .cd-imag:hover .box-right {
+    right: 32%;
+    bottom: 43%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -143,37 +143,37 @@
     height: 80px;
   }
 
-    .cd-imag:hover .box-left {
-  left: 26%;
-  top: 43%;
-}
-
-.cd-imag:hover .box-right {
-  right: 26%;
-  bottom: 43%;
-}
-}
-
-@media (max-width:576px) {
   .cd-imag:hover .box-left {
-  left: 22%;
-  top: 44%;
+    left: 26%;
+    top: 43%;
+  }
+
+  .cd-imag:hover .box-right {
+    right: 26%;
+    bottom: 43%;
+  }
 }
 
-.cd-imag:hover .box-right {
-  right: 22%;
-  bottom: 44%;
-}
-}
-
-@media (max-width:350px) {
+@media (max-width: 576px) {
   .cd-imag:hover .box-left {
-  left: 27%;
-  top: 44%;
+    left: 22%;
+    top: 44%;
+  }
+
+  .cd-imag:hover .box-right {
+    right: 22%;
+    bottom: 44%;
+  }
 }
 
-.cd-imag:hover .box-right {
-  right: 27%;
-  bottom: 44%;
-}
+@media (max-width: 350px) {
+  .cd-imag:hover .box-left {
+    left: 27%;
+    top: 44%;
+  }
+
+  .cd-imag:hover .box-right {
+    right: 27%;
+    bottom: 44%;
+  }
 }

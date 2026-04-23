@@ -1,17 +1,14 @@
-/* ===== CONTACT V2 ===== */
-
 .contact-v2 {
   padding: 80px 0;
 }
 
-/* LEFT */
 .contact-v2-title {
   font-size: 32px;
   font-weight: 700;
 }
 
 .contact-v2-title span {
-  color: #EEC344;
+  color: #eec344;
 }
 
 .contact-v2-desc {
@@ -20,7 +17,6 @@
   line-height: 28px;
 }
 
-/* INFO */
 .contact-v2-info {
   display: flex;
   flex-direction: column;
@@ -46,11 +42,10 @@
   color: #555;
 }
 
-/* FORM */
 .contact-v2-form {
   background: #f7faf9;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .contact-v2-form input,
@@ -69,7 +64,6 @@
   background: #e4efed;
 }
 
-/* MAP */
 .contact-v2-map {
   margin-top: 50px;
   min-height: 600px;
@@ -81,7 +75,6 @@
   margin-bottom: 10px;
   display: block;
 }
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 991px) {
   .contact-v2 {

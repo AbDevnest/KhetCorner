@@ -3,12 +3,10 @@
   background: #f9fbfb;
 }
 
-/* spacing between sections */
 .product-row {
   margin-bottom: 4rem;
 }
 
-/* text content */
 .product-content {
   padding: 1rem 2rem;
 }
@@ -16,7 +14,7 @@
 .prod-txt-h {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
@@ -27,7 +25,6 @@
   margin-bottom: 10px;
 }
 
-/* image styling */
 .product-img-wrapper {
   overflow: hidden;
   border-radius: 10px;
@@ -42,12 +39,10 @@
   transform: scale(1.08);
 }
 
-/* spacing fix */
 .product-row:last-child {
   margin-bottom: 0;
 }
 
-/* RESPONSIVE */
 @media (max-width: 991px) {
   .product-content {
     padding: 1rem 0;
@@ -79,12 +74,11 @@
   overflow: hidden;
 }
 
-/* card */
 .count-card {
   background: #fff;
   padding: 2rem 1rem;
   border-radius: 12px;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
@@ -92,7 +86,6 @@
   transform: translateY(-8px);
 }
 
-/* number */
 .count-h-txt {
   font-size: 2.5rem;
   font-weight: 700;
@@ -100,7 +93,6 @@
   margin-bottom: 10px;
 }
 
-/* text */
 .count-p-txt {
   color: #6f6f6f;
   font-size: 0.9rem;
@@ -108,7 +100,6 @@
   letter-spacing: 1px;
 }
 
-/* floating wheat image */
 .count-img {
   position: absolute;
   right: 0;
@@ -120,7 +111,6 @@
   width: 220px;
 }
 
-/* responsive */
 @media (max-width: 991px) {
   .count-sec {
     padding: 3rem 0;
@@ -150,11 +140,10 @@
   background: #f9fbfb;
 }
 
-/* heading */
 .sec-title {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -164,7 +153,6 @@
   line-height: 26px;
 }
 
-/* logo card */
 .partner-card {
   background: #fff;
   padding: 1.5rem;
@@ -173,7 +161,7 @@
   align-items: center;
   justify-content: center;
   height: 100px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
@@ -185,7 +173,6 @@
   transition: all 0.3s ease;
 }
 
-/* hover effect */
 .partner-card:hover {
   transform: translateY(-5px);
 }
@@ -195,7 +182,6 @@
   transform: scale(1.05);
 }
 
-/* responsive */
 @media (max-width: 991px) {
   .ser-sec-four {
     padding: 3rem 0;

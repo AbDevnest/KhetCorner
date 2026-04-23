@@ -2,52 +2,43 @@
   padding: 60px 0;
 }
 
-/* heading */
 .service-title {
   font-size: 30px;
   font-weight: 600;
 }
 
-/* grid spacing */
 .service-grid {
   row-gap: 25px;
 }
 
-/* box */
 .ser-box {
   padding: 30px;
-  border: 2px solid #EEC344;
+  border: 2px solid #eec344;
   text-align: center;
   height: 100%;
   transition: 0.3s;
 }
 
-/* icon */
 .ser-box img {
   width: 60px;
   margin-bottom: 15px;
 }
 
-/* title */
 .ser-box h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-/* text */
 .ser-box p {
   font-size: 14px;
   line-height: 24px;
 }
 
-/* hover (light enhance, same feel) */
 .ser-box:hover {
   background: #fff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
 }
-
-/* ===== RESPONSIVE ===== */
 
 @media (max-width: 991px) {
   .service-sec-2 {
@@ -69,7 +60,6 @@
   }
 }
 /* section two css complete */
-/* ===== SERVICE COUNT SECTION ===== */
 
 .service-count-section {
   background: #eec344;
@@ -124,7 +114,6 @@
   max-width: 100%;
 }
 
-/* ===== TABLET ===== */
 @media (max-width: 991px) {
   .service-count-wrapper {
     padding: 4rem 0;
@@ -147,7 +136,6 @@
   }
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 767px) {
   .service-count-wrapper {
     padding: 3rem 0;
@@ -172,14 +160,12 @@
     width: 140px;
   }
 }
-/* section 3 css complete */
-/* ===== SERVICE PARTNERS ===== */
+/*  SERVICE PARTNERS  */
 
 .service-partners-section {
   margin: 4rem 0;
 }
 
-/* heading */
 .service-partners-heading {
   border-left: 4px solid #eec344;
   padding-left: 15px;
@@ -198,7 +184,6 @@
   margin: 0;
 }
 
-/* logos */
 .service-partners-logos {
   padding: 3rem 0;
 }
@@ -220,7 +205,6 @@
   transform: scale(1.05);
 }
 
-/* ===== TABLET ===== */
 @media (max-width: 991px) {
   .service-partners-section {
     margin: 3rem 0;
@@ -235,7 +219,6 @@
   }
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 767px) {
   .service-partners-section {
     margin: 2.5rem 0;
@@ -254,13 +237,12 @@
   }
 }
 
-/* ===== SERVICE SECTION 5 ===== */
+/*  SERVICE SECTION 5  */
 
 .service-highlight-section {
   margin: 4rem 0;
 }
 
-/* LEFT IMAGE */
 .service-highlight-img {
   background-image: url("../assets/images/img4.jpg");
   background-size: cover;
@@ -269,7 +251,6 @@
   width: 100%;
 }
 
-/* RIGHT CONTENT */
 .service-highlight-content {
   padding: 80px 60px;
 }
@@ -287,12 +268,10 @@
   margin-bottom: 10px;
 }
 
-/* button spacing */
 .service-btn {
   margin-top: 20px;
 }
 
-/* ===== TABLET ===== */
 @media (max-width: 991px) {
   .service-highlight-img {
     min-height: 350px;
@@ -307,7 +286,6 @@
   }
 }
 
-/* ===== MOBILE ===== */
 @media (max-width: 767px) {
   .service-highlight-section {
     margin: 2rem 0;

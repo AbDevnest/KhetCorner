@@ -6,14 +6,13 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="row gy-4">
-
-          {/* Logo + About */}
           <div className="col-lg-4 col-md-6">
             <h3 className="footer-logo">KhetCorner</h3>
 
             <p className="footer-text">
-              KhetCorner is your trusted platform for modern agriculture solutions,
-              helping farmers grow smarter with quality products and services.
+              KhetCorner is your trusted platform for modern agriculture
+              solutions, helping farmers grow smarter with quality products and
+              services.
             </p>
 
             <p className="footer-copy">
@@ -47,7 +46,6 @@ function Footer() {
               <button className="newsletter-btn">Subscribe</button>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
