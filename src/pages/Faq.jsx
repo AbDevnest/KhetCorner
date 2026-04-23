@@ -3,12 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import heroImg from "../assets/images/post-img.jpg";
-import { Link } from "react-router-dom";
-
-import post1 from "../assets/images/media-thumb1.jpg";
-import post2 from "../assets/images/media-thumb2.jpg";
-import post3 from "../assets/images/media-thumb3.jpg";
-import post4 from "../assets/images/media-thumb4.jpg";
 import "../styles/faq.css"
 
 function faq () {

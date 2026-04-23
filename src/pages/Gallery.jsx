@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import heroImg from "../assets/images/post-img.jpg";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import g1 from "../assets/images/gallery-1.jpg";

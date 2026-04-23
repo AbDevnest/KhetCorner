@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../styles/home.css";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-import postImg from "../assets/images/post-img.jpg";
 import logo1 from "../assets/images/client-1.png";
 import logo2 from "../assets/images/client-2.png";
 import logo3 from "../assets/images/client-3.png";

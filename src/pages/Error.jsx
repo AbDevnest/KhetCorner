@@ -1,8 +1,5 @@
-import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
-import heroImg from "../assets/images/post-img.jpg";
 import errorBg from "../assets/images/404-bg.jpg";
 import "../styles/error.css"
 
