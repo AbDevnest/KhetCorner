@@ -1,0 +1,187 @@
+/* ===== SECTION ===== */
+
+.contact-section {
+  background: #388261e3;
+  padding:20px 0;
+}
+
+/* ROW */
+.contact-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 600px;
+}
+
+/* ===== LEFT ===== */
+
+.contact-left {
+  width: 50%;
+  color: #fff;
+}
+
+.subtitle {
+  color: #ffc107;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-left h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.info {
+  margin-bottom: 25px;
+}
+
+.info h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-size: 14px;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* ===== MAP ===== */
+
+.contact-map {
+  width: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  border: 0;
+}
+
+/* ===== FORM (CENTER OVERLAY) ===== */
+
+.contact-form-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  width: 360px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: none !important;
+  outline: none !important;
+  font-size: 14px;
+    border-radius: 6px;
+    background-color: #e9f0f8d2;
+
+}
+
+.contact-form-box textarea {
+  resize: none;
+}
+
+/* ERROR */
+.contact-form-box span {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.ctn-btn {
+  width: 100%;
+    border-radius: 6px;
+
+}
+
+.ctn-btn:hover {
+  color: #ffc107 !important;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 992px) {
+
+  .contact-row {
+    min-height: auto;
+  }
+
+  .contact-left {
+    width: 50%;
+  }
+
+  .contact-left h2 {
+    font-size: 26px;
+  }
+
+  .contact-map iframe {
+    min-height: 450px;
+  }
+
+  .contact-form-box {
+    width: 320px;
+    padding: 25px;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-map {
+    width: 100%;
+  }
+
+  .contact-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left h2 {
+    font-size: 24px;
+  }
+
+  .info h4 {
+    font-size: 15px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+
+  .contact-map iframe {
+    min-height: 300px;
+  }
+
+  /* FORM NORMAL FLOW */
+  .contact-form-box {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 20px 0px 40px 0px;
+  }
+}

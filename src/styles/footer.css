@@ -1,0 +1,87 @@
+.footer {
+      background: #ffffffe7;
+
+  color: #0a1313;
+  padding: 60px 0 30px;
+   backdrop-filter: blur(6px);
+}
+
+/* Logo */
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+/* Text */
+.footer-text {
+  font-size: 14px;
+    color: #2b3535;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Copy */
+.footer-copy {
+  margin-top: 15px;
+  font-size: 13px;
+      color: #2b3535;
+
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-btn {
+  background: #ffbb00e7;
+  border: none;
+  padding: 10px 15px;
+  color: #1b5e20;
+  font-weight: 600;
+  border-radius: 0 5px 5px 0;
+  transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+  background: #81c784;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-btn {
+    border-radius: 5px;
+  }
+}

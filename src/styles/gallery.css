@@ -1,0 +1,179 @@
+.gallary-sec-two {
+  margin: 3rem 0;
+}
+
+/* FILTER */
+.cd-inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cd-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.cd-li {
+  margin: 0 10px;
+}
+
+.cd-li button {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  color: #565656;
+  cursor: pointer;
+}
+
+.cd-li button.active {
+  color: #388281;
+  border-bottom: 3px solid #388281;
+  font-weight: bold;
+}
+
+/* IMAGE */
+.cd-imag {
+  position: relative;
+  overflow: hidden;
+}
+
+.cd-imag img {
+  width: 100%;
+  display: block;
+}
+
+/* overlays */
+.black-line {
+  position: absolute;
+  inset: 0;
+  border: 18px solid rgba(0,0,0,0.2);
+}
+
+.black-overlay {
+  position: absolute;
+  inset: 0;
+  border: 36px solid transparent;
+}
+
+/* boxes */
+.overlay-box {
+  position: absolute;
+  width: 180px;
+  height: 100px;
+  background: rgba(61, 134, 133, 0.7);
+  transition: 0.5s;
+}
+
+.box-left {
+  top: 1%;
+  left: -200px;
+}
+
+.box-right {
+  bottom: 1%;
+  right: -200px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+}
+
+/* hover */
+.cd-imag:hover .box-left {
+  left: 33%;
+  top: 47%;
+}
+
+.cd-imag:hover .box-right {
+  right: 33%;
+  bottom: 47%;
+}
+
+.cd-imag:hover .text-overlay {
+  opacity: 1;
+}
+
+/* animation */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide {
+  animation: slideUpFade 0.5s ease;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+  .gallary-sec-two {
+    margin: 3rem 2rem;
+  }
+
+  .cd-imag:hover .box-left {
+  left: 32%;
+  top: 43%;
+}
+
+.cd-imag:hover .box-right {
+  right: 32%;
+  bottom: 43%;
+}
+}
+
+@media (max-width: 768px) {
+  .gallary-sec-two {
+    margin: 2rem 1rem;
+  }
+
+  .overlay-box {
+    width: 140px;
+    height: 80px;
+  }
+
+    .cd-imag:hover .box-left {
+  left: 26%;
+  top: 43%;
+}
+
+.cd-imag:hover .box-right {
+  right: 26%;
+  bottom: 43%;
+}
+}
+
+@media (max-width:576px) {
+  .cd-imag:hover .box-left {
+  left: 22%;
+  top: 44%;
+}
+
+.cd-imag:hover .box-right {
+  right: 22%;
+  bottom: 44%;
+}
+}
+
+@media (max-width:350px) {
+  .cd-imag:hover .box-left {
+  left: 27%;
+  top: 44%;
+}
+
+.cd-imag:hover .box-right {
+  right: 27%;
+  bottom: 44%;
+}
+}

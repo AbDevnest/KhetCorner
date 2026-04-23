@@ -1,0 +1,79 @@
+/* ===== INNER HERO ===== */
+
+.inner-hero {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* overlay */
+.inner-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* content */
+.inner-hero-content {
+  position: relative;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+/* title */
+.inner-hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* breadcrumb */
+.inner-hero-breadcrumb {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* 🔥 GOLD LINKS */
+.inner-hero-link {
+  color: #EEC344;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.inner-hero-link:hover {
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .inner-hero {
+    height: 280px;
+  }
+
+  .inner-hero-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-hero {
+    height: 220px;
+  }
+
+  .inner-hero-title {
+    font-size: 28px;
+  }
+
+  .inner-hero-content {
+    padding-bottom: 25px;
+  }
+}

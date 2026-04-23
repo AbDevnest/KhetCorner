@@ -1,0 +1,115 @@
+/* Base */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+  background-color: transparent !important;
+}
+
+/* Scroll effect */
+.navbar-scrolled {
+  background: #388261e3!important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px 0;
+}
+
+/* Logo */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+/* Links */
+.nav-link {
+  color: #fff !important;
+  margin-left: 20px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.nav-link:hover {
+  color: #ffbb00e7 !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #349556f1 !important;
+}
+
+.dropdown-item {
+  color: #E8F5E9 !important;
+
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item.active,
+.dropdown-item:focus-visible {
+  color: rgb(13, 14, 14) !important;
+  background-color: #E8F5E9 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+  }
+
+
+/* Navbar toggler button */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  background: transparent !important;
+}
+
+/* जब क्लिक/फोकस हो */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* अगर Bootstrap button styles apply हो रहे हों */
+.btn,
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Links focus outline हटाने के लिए */
+.nav-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #2e7d32d9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}

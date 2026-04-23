@@ -1,0 +1,160 @@
+.blog-sec-two {
+  margin: 4rem 0;
+}
+
+/* BLOG CARD */
+.blog-card {
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.blog-card-img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.blog-card-img:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+/* CONTENT */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-title {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.blog-title:hover {
+  color: #EEC344;
+  cursor: pointer;
+}
+
+.blog-desc {
+  color: #7f7979;
+  margin: 10px 0;
+}
+
+/* AUTHOR */
+.blog-author {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.blog-author img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.blog-author h5 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.blog-author p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* SIDEBAR */
+.sidebar-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sidebar-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #EEC344;
+  display: block;
+  margin-top: 5px;
+}
+
+/* CATEGORY */
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #444;
+}
+
+.category-list a:hover {
+  color: #EEC344;
+}
+
+.category-list span {
+  background: #388261;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* RELATED */
+.related-post {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.related-post img {
+  width: 70px;
+}
+
+.related-post p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags a {
+  background: #eef3f3;
+  padding: 5px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #555;
+}
+
+.tags a:hover {
+  background: #0b298e;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .blog-sec-two {
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-sec-two {
+    margin: 2rem 0;
+  }
+}
