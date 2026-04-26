@@ -4,8 +4,11 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import heroImg from "../assets/images/post-img.jpg";
 import "../styles/faq.css";
+import useScrollFade from "../hooks/useScrollFade";
 
-function faq() {
+
+function Faq() {
+  useScrollFade();
   const faqData = [
     {
       id: 1,
@@ -43,8 +46,8 @@ function faq() {
         <Header />
 
         <Hero title="Our FAQ" subtitle="faq" bgImage={heroImg} />
-        {/* FAQ SECTION START */}
-        <section className="faq-section">
+         {/* FAQ SECTION START */}
+        <section className="faq-section fade-up">
           <div className="container">
             <div className="row">
               {/* LEFT SIDE - FAQ */}
@@ -136,4 +139,4 @@ function faq() {
   );
 }
 
-export default faq;
+export default Faq;

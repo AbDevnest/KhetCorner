@@ -4,8 +4,11 @@ import Hero from "../components/Hero";
 import { useState } from "react";
 import heroImg from "../assets/images/post-img.jpg";
 import "../styles/contact-main.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Contact() {
+  useScrollFade();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -101,7 +104,7 @@ function Contact() {
 
         <Hero title="Our Contact" subtitle="Contact" bgImage={heroImg} />
 
-        <section className="contact-v2">
+        <section className="contact-v2 fade-up">
           <div className="container">
             <div className="row align-items-center">
               {/* LEFT */}
@@ -188,7 +191,7 @@ function Contact() {
           </div>
         </section>
 
-        <section className="contact-v2-map">
+        <section className="contact-v2-map fade-up">
           <iframe
             src="https://maps.google.com/maps?q=Jaipur,Rajasthan&z=13&output=embed"
             width="100%"

@@ -10,11 +10,13 @@ import Faq from "./pages/Faq";
 import Error from "./pages/Error";
 import Gallery from "./pages/Gallery";
 import ComingSoon from "./pages/ComingSoon";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

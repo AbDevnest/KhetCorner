@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/footer.css";
+import "../styles/animation.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Footer() {
+  useScrollFade();
   return (
-    <footer className="footer">
+    <footer className="footer fade-up">
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6">

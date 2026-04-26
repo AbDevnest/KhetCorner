@@ -8,8 +8,11 @@ import sideImg from "../assets/images/img5.jpg";
 import logo from "../assets/images/logo-2.png";
 
 import "../styles/comingsoon.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function ComingSoon() {
+  useScrollFade();
   return (
     <>
       <Header />
@@ -17,7 +20,7 @@ function ComingSoon() {
       <Hero title="Coming Soon" subtitle="Coming Soon" bgImage={heroImg} />
 
       {/* SECTION */}
-      <section className="coming-sec">
+      <section className="coming-sec fade-up">
         <div className="container-fluid p-0">
           <div className="row g-0">
             {/* LEFT IMAGE */}

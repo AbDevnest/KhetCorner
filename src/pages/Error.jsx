@@ -2,17 +2,17 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import errorBg from "../assets/images/404-bg.jpg";
 import "../styles/error.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Error() {
+  useScrollFade();
   return (
     <>
       <Header />
 
       {/* ERROR SECTION */}
-      <section
-        className="error-page-bg"
-        style={{ backgroundImage: `url(${errorBg})` }}
-      >
+      <section className="error-page-bg fade-up" style={{ backgroundImage: `url(${errorBg})` }}>
         <div className="error-overlay"></div>
 
         <div className="container">

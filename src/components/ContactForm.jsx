@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
+import "../styles/animation.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function ContactForm() {
+  useScrollFade();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -75,7 +80,7 @@ function ContactForm() {
 
   return (
     <>
-      <section className="contact-section">
+      <section className="contact-section fade-up">
         <div className="container">
           <div className="contact-row">
             {/* LEFT SIDE */}

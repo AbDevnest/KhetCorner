@@ -17,8 +17,11 @@ import c4 from "../assets/images/client-5.png";
 import c5 from "../assets/images/client-6.png";
 import c6 from "../assets/images/client-7.png";
 import "../styles/service.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Service() {
+  useScrollFade();
   return (
     <>
       <div>
@@ -28,7 +31,7 @@ function Service() {
 
         {/* Section Second */}
 
-        <section className="service-sec-2">
+        <section className="service-sec-2 fade-up">
           <div className="container">
             {/* heading */}
             <div className="row mb-4">
@@ -116,8 +119,8 @@ function Service() {
           </div>
         </section>
 
-        {/* ===== SERVICE COUNT SECTION ===== */}
-        <section className="service-count-section">
+       
+        <section className="service-count-section fade-up">
           <div className="container">
             <div className="service-count-wrapper">
               <div className="row g-4">
@@ -161,10 +164,10 @@ function Service() {
           </div>
         </section>
 
-        {/*  SERVICE PARTNERS SECTION  */}
-        <section className="service-partners-section">
+        
+        <section className="service-partners-section fade-up  ">
           <div className="container">
-            {/* Heading */}
+            
             <div className="row">
               <div className="col-lg-6 col-12">
                 <div className="service-partners-heading">
@@ -209,7 +212,7 @@ function Service() {
         </section>
 
         {/*  SERVICE SECTION 5  */}
-        <section className="service-highlight-section">
+        <section className="service-highlight-section fade-up">
           <div className="container-fluid px-0">
             <div className="row g-0 align-items-center">
               <div className="col-lg-6 col-12">

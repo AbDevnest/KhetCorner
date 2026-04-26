@@ -13,8 +13,11 @@ import g5 from "../assets/images/gallery5.jpg";
 import g6 from "../assets/images/gallery6.jpg";
 
 import "../styles/gallery.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Gallery() {
+  useScrollFade();
   const [active, setActive] = useState("All");
 
   const data = [
@@ -35,7 +38,7 @@ function Gallery() {
         <Header />
 
         <Hero title="Our Gallery" subtitle="Gallery" bgImage={heroImg} />
-        <section className="gallary-sec-two">
+        <section className="gallary-sec-two fade-up">
           <div className="container">
             {/* TITLE */}
             <div className="row">

@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/hero.css";
+import "../styles/animation.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Hero({ title, subtitle, bgImage }) {
+  useScrollFade();
   return (
     <section
-      className="inner-hero"
+      className="inner-hero fade-up"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="inner-hero-overlay"></div>

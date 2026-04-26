@@ -24,8 +24,11 @@ import thumb2 from "../assets/images/media-thumb2.jpg";
 import thumb3 from "../assets/images/media-thumb3.jpg";
 import thumb4 from "../assets/images/media-thumb4.jpg";
 import "../styles/blog.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Blog() {
+  useScrollFade();
   const blogs = [
     {
       img: blog1,
@@ -77,7 +80,7 @@ function Blog() {
 
         <Hero title="Our Blog" subtitle="Blog" bgImage={heroImg} />
 
-        <section className="blog-sec-two">
+        <section className="blog-sec-two fade-up">
           <div className="container">
             <div className="row">
               {/* LEFT BLOG */}

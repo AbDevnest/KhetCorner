@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import React, { useState } from "react";
 import "../styles/home.css";
+import "../styles/animation.css";
+
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import logo1 from "../assets/images/client-1.png";
@@ -16,8 +18,13 @@ import cow from "../assets/images/cow.png";
 import img6 from "../assets/images/img6.jpg";
 import img7 from "../assets/images/img7.jpg";
 import img8 from "../assets/images/img8.jpg";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function Home() {
+
+useScrollFade();
+ 
   const yearData = [
     {
       year: "1992",
@@ -69,7 +76,7 @@ function Home() {
           <Header />
 
           {/* Main Carousel Wrapper */}
-          <section className="hero-section">
+          <section className="hero-section fade-up">
             <div
               id="heroCarousel"
               className="carousel slide"
@@ -146,7 +153,7 @@ function Home() {
           </section>
 
           {/* About section */}
-          <section className="about-section">
+          <section className="about-section fade-up">
             <div className="container">
               <div className="row align-items-center">
                 {/* Left Content */}
@@ -207,7 +214,7 @@ function Home() {
           </section>
 
           {/* Section 3 */}
-          <section className="process-section">
+          <section className="process-section fade-up">
             <div className="container">
               {/* Top Steps */}
               <div className="row text-center process-steps">
@@ -278,7 +285,7 @@ function Home() {
           </section>
 
           {/* Section 4: Timeline */}
-          <section className="history-section">
+          <section className="history-section fade-up">
             <div className="history-bg"></div>
 
             <div className="container">

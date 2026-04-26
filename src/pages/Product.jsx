@@ -16,8 +16,10 @@ import client5 from "../assets/images/client-5.png";
 import client6 from "../assets/images/client-6.png";
 
 import "../styles/product.css";
+import useScrollFade from "../hooks/useScrollFade";
 
 function Product() {
+  useScrollFade();
   const productsData = [
     {
       title: "Wheats",
@@ -58,7 +60,7 @@ function Product() {
         <Hero title="Our Products" subtitle="Product" bgImage={heroImg} />
 
         {/* <!--Section two start --> */}
-        <section className="product-sec-two">
+        <section className="product-sec-two fade-up">
           <div className="container">
             {productsData.map((item, index) => (
               <div className="row align-items-center product-row" key={index}>
@@ -93,7 +95,7 @@ function Product() {
           </div>
         </section>
         {/* <!-- section three start --> */}
-        <section className="count-sec">
+        <section className="count-sec fade-up">
           <div className="container position-relative">
             <div className="row text-center">
               <div className="col-lg-3 col-sm-6 col-12 mb-4">
@@ -133,7 +135,7 @@ function Product() {
         </section>
         {/* <!-- count section complete --> */}
 
-        <section className="ser-sec-four">
+        <section className="ser-sec-four fade-up">
           <div className="container">
             {/* heading */}
             <div className="row justify-content-center">

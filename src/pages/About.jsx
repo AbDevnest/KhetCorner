@@ -23,8 +23,12 @@ import c4 from "../assets/images/client-5.png";
 import c5 from "../assets/images/client-6.png";
 import c6 from "../assets/images/client-7.png";
 import "../styles/about.css";
+import "../styles/animation.css";
+import useScrollFade from "../hooks/useScrollFade";
+
 
 function About() {
+  useScrollFade();
   return (
     <>
       <div>
@@ -33,7 +37,7 @@ function About() {
         <Hero title="About Us" subtitle="About" bgImage={heroImg} />
 
         {/*  ABOUT SECTION 2  */}
-        <section className="about-sec-2">
+        <section className="about-sec-2 fade-up">
           <div className="container">
             {/* TOP ROW */}
             <div className="row align-items-center">
@@ -105,7 +109,7 @@ function About() {
         </section>
 
         {/*  Section 3   */}
-        <section className="team-section">
+        <section className="team-section fade-up">
           <div className="container">
             {/* heading */}
             <div className="row mb-4">
@@ -207,7 +211,7 @@ function About() {
           </div>
         </section>
         {/*  Section 4 start  */}
-        <section className="about-sec-4">
+        <section className="about-sec-4 fade-up">
           <div className="container">
             {/* WHY CHOOSE US */}
             <div className="row about-sec-4-top">
