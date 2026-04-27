@@ -13,11 +13,9 @@ import g5 from "../assets/images/gallery5.jpg";
 import g6 from "../assets/images/gallery6.jpg";
 
 import "../styles/gallery.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Gallery() {
-  useScrollFade();
   const [active, setActive] = useState("All");
 
   const data = [

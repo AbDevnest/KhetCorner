@@ -23,12 +23,9 @@ import c4 from "../assets/images/client-5.png";
 import c5 from "../assets/images/client-6.png";
 import c6 from "../assets/images/client-7.png";
 import "../styles/about.css";
-import "../styles/animation.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function About() {
-  useScrollFade();
   return (
     <>
       <div>

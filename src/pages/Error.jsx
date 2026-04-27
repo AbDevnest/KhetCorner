@@ -2,11 +2,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import errorBg from "../assets/images/404-bg.jpg";
 import "../styles/error.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Error() {
-  useScrollFade();
   return (
     <>
       <Header />

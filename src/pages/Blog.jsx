@@ -24,11 +24,9 @@ import thumb2 from "../assets/images/media-thumb2.jpg";
 import thumb3 from "../assets/images/media-thumb3.jpg";
 import thumb4 from "../assets/images/media-thumb4.jpg";
 import "../styles/blog.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Blog() {
-  useScrollFade();
   const blogs = [
     {
       img: blog1,
@@ -80,13 +78,13 @@ function Blog() {
 
         <Hero title="Our Blog" subtitle="Blog" bgImage={heroImg} />
 
-        <section className="blog-sec-two fade-up">
+        <section className="blog-sec-two ">
           <div className="container">
             <div className="row">
               {/* LEFT BLOG */}
               <div className="col-lg-9 col-12">
                 {blogs.map((item, i) => (
-                  <div className="blog-card mt-lg-5 mt-4" key={i}>
+                  <div className="blog-card mt-lg-5 mt-4 fade-up" key={i}>
                     <figure>
                       <img
                         src={item.img}
@@ -117,7 +115,7 @@ function Blog() {
 
               {/* RIGHT SIDEBAR */}
               <div className="col-lg-3 col-12 mt-lg-0 mt-4">
-                <div className="blog-right-sec">
+                <div className="blog-right-sec fade-up">
                   {/* CATEGORY */}
                   <h3 className="sidebar-title">Categories</h3>
                   <ul className="category-list">

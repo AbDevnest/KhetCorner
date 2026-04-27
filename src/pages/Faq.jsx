@@ -4,11 +4,9 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import heroImg from "../assets/images/post-img.jpg";
 import "../styles/faq.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Faq() {
-  useScrollFade();
   const faqData = [
     {
       id: 1,

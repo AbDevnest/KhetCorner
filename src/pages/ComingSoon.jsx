@@ -8,11 +8,9 @@ import sideImg from "../assets/images/img5.jpg";
 import logo from "../assets/images/logo-2.png";
 
 import "../styles/comingsoon.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function ComingSoon() {
-  useScrollFade();
   return (
     <>
       <Header />

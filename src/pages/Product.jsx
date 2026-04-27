@@ -16,10 +16,8 @@ import client5 from "../assets/images/client-5.png";
 import client6 from "../assets/images/client-6.png";
 
 import "../styles/product.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 function Product() {
-  useScrollFade();
   const productsData = [
     {
       title: "Wheats",

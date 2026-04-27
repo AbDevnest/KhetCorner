@@ -1,16 +1,13 @@
 import React from "react";
 import "../styles/footer.css";
-import "../styles/animation.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Footer() {
-  useScrollFade();
   return (
-    <footer className="footer fade-up">
+    <footer className="footer ">
       <div className="container">
         <div className="row gy-4">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 fade-up">
             <h3 className="footer-logo">KhetCorner</h3>
 
             <p className="footer-text">
@@ -25,7 +22,7 @@ function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 fade-up">
             <h5 className="footer-title">Contact</h5>
 
             <p className="footer-text">📍 Rajasthan, India</p>
@@ -34,7 +31,7 @@ function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="col-lg-4 col-md-12">
+          <div className="col-lg-4 col-md-12 fade-up">
             <h5 className="footer-title">Newsletter</h5>
 
             <p className="footer-text">

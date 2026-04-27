@@ -17,11 +17,9 @@ import c4 from "../assets/images/client-5.png";
 import c5 from "../assets/images/client-6.png";
 import c6 from "../assets/images/client-7.png";
 import "../styles/service.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Service() {
-  useScrollFade();
   return (
     <>
       <div>

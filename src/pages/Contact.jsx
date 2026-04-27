@@ -4,11 +4,9 @@ import Hero from "../components/Hero";
 import { useState } from "react";
 import heroImg from "../assets/images/post-img.jpg";
 import "../styles/contact-main.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Contact() {
-  useScrollFade();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -120,12 +118,12 @@ function Contact() {
                 <div className="contact-v2-info">
                   <div className="contact-v2-item">
                     <i className="fas fa-phone"></i>
-                    <p>+91 98765 43210</p>
+                    <p>+91 12349 43210</p>
                   </div>
 
                   <div className="contact-v2-item">
                     <i className="fas fa-envelope"></i>
-                    <p>support@farmfresh.com</p>
+                    <p>support@khetcorner.com</p>
                   </div>
 
                   <div className="contact-v2-item">

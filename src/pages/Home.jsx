@@ -1,8 +1,6 @@
 import Header from "../components/Header";
 import React, { useState } from "react";
 import "../styles/home.css";
-import "../styles/animation.css";
-
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import logo1 from "../assets/images/client-1.png";
@@ -18,12 +16,10 @@ import cow from "../assets/images/cow.png";
 import img6 from "../assets/images/img6.jpg";
 import img7 from "../assets/images/img7.jpg";
 import img8 from "../assets/images/img8.jpg";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function Home() {
 
-useScrollFade();
  
   const yearData = [
     {

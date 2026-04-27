@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
-import "../styles/animation.css";
-import useScrollFade from "../hooks/useScrollFade";
 
 
 function ContactForm() {
-  useScrollFade();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -80,11 +77,11 @@ function ContactForm() {
 
   return (
     <>
-      <section className="contact-section fade-up">
+      <section className="contact-section ">
         <div className="container">
           <div className="contact-row">
             {/* LEFT SIDE */}
-            <div className="contact-left">
+            <div className="contact-left fade-up">
               <p className="subtitle">Get In Touch</p>
               <h2>Contact Us</h2>
 
@@ -114,7 +111,7 @@ function ContactForm() {
             </div>
 
             {/* FORM (ABSOLUTE CENTER) */}
-            <div className="contact-form-box">
+            <div className="contact-form-box fade-up">
               <form onSubmit={handleSubmit}>
                 <input
                   name="name"
@@ -155,7 +152,7 @@ function ContactForm() {
             </div>
 
             {/* RIGHT MAP */}
-            <div className="contact-map">
+            <div className="contact-map fade-up">
               <iframe
                 src="https://www.google.com/maps?q=Jaipur&output=embed"
                 title="map"
